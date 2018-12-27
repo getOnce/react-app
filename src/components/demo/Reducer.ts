@@ -1,16 +1,18 @@
-import * as ActionTypes from './ActionTypes.js';
-export interface Action {
+import * as ActionTypes from './views/ActionTypes';
+export interface IAction {
   type: string;
-  counterCaption: string;
+  value: number;
 }
-export default (state: any, action: Action) => {
-  const {counterCaption} = action;
+export default function(state: any, action: IAction) {
+  const {value, type} = action;
 
-  switch (action.type) {
+  switch (type) {
     case ActionTypes.INCREMENT:
-      return {...state, [counterCaption]: state[counterCaption] + 1};
+    
+      return Object.assign({}, state, { value: value + 1 })
+
     case ActionTypes.DECREMENT:
-      return {...state, [counterCaption]: state[counterCaption] - 1};
+      return Object.assign({}, state, { value: value - 1 })
     default:
       return state
   }
