@@ -2,7 +2,7 @@ import * as React from 'react';
 import Demo, {InterProps} from './Demo';
 
 
-export default class extends React.Component <{}, object>{
+export default class extends React.Component<{}, object>{
     constructor(props: InterProps) {
         super(props);
         this.state = {
@@ -11,12 +11,13 @@ export default class extends React.Component <{}, object>{
             onIncrement: props.onIncrement,
             onDecrement: props.onDecrement
         };
+        
     }
 
     render() {
         const {
             price, 
-            name, 
+            name,
             onIncrement, 
             onDecrement
         } = this.state;
