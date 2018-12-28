@@ -6,7 +6,7 @@ export interface InterProps {
     onIncrement?: () => void;
     onDecrement?: () => void;
 }
-function Hello({
+function Demo({
     name,
     price,
     onIncrement,
@@ -19,4 +19,4 @@ function Hello({
         <input onClick={onDecrement} value="加价" type="button"/>
     </div>)
 }
-export default Hello
+export default Demo
