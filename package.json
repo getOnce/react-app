@@ -27,6 +27,7 @@
     "react-dev-utils": "^5.0.2",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
+    "react-router-redux": "^4.0.8",
     "resolve": "1.6.0",
     "source-map-loader": "^0.2.1",
     "style-loader": "0.19.0",
@@ -55,6 +56,7 @@
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
     "@types/react-redux": "^6.0.11",
+    "@types/react-router-redux": "^5.0.17",
     "typescript": "^3.2.2"
   },
   "jest": {
