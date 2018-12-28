@@ -1,0 +1,17 @@
+
+
+export const th_TH = new Map([
+    ['你好', 'hello th']
+]);;
+
+export const en_US = new Map([
+    ['你好', 'hello us']
+])
+
+export const zh_CN = new Map([
+    ['你好', 'hello zh']
+])
+
+export const i18n = function(name: string, lang: string) {
+    return i18n[lang].get(name);
+}

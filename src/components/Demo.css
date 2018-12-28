@@ -1,0 +1,8 @@
+body span, body div, input {
+    font-size: 16px;
+    color: #000;
+}
+div {
+    border: solid 1px #dfdfdf;
+    margin: 10px;
+}
